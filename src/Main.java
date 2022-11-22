@@ -64,5 +64,20 @@ public class Main {
             System.out.println(year + " год не является високосным");
         }
 
+        // Разделитель
+        System.out.println();
+
+        // Задание 4
+        int deliveryDistance = 95;
+        int daysAmount = 0;
+
+        if (deliveryDistance < 20){
+            daysAmount = 1;
+        } else {
+            daysAmount = ((deliveryDistance + 20) / 40) + 1;
+        }
+
+        System.out.println("Потребуется дней: " + daysAmount);
+
     }
 }
