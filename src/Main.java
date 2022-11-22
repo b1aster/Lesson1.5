@@ -79,5 +79,36 @@ public class Main {
 
         System.out.println("Потребуется дней: " + daysAmount);
 
+        // Разделитель
+        System.out.println();
+
+        // Задание 5
+        int monthNumber = 3;
+
+        switch (monthNumber) {
+            case 12:
+            case 1:
+            case 2:
+                System.out.println(monthNumber + " месяц принадлежит к сезону зима");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println(monthNumber + " месяц принадлежит к сезону весна");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println(monthNumber + " месяц принадлежит к сезону лето");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println(monthNumber + " месяц принадлежит к сезону осень");
+                break;
+            default:
+                System.out.println("Номер месяца больше 13");
+                break;
+        }
     }
 }
