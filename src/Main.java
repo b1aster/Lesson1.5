@@ -34,5 +34,35 @@ public class Main {
 
         }
 
+        // Разделитель
+        System.out.println();
+
+        // Задание 3
+        int year = 2012;
+        boolean leap = false;
+
+        if (year % 4 == 0){
+
+            if (year % 100 == 0) {
+
+                if (year % 400 == 0)
+                    leap = true;
+                else
+                    leap = false;
+
+            } else {
+                leap = true;
+            }
+
+        } else {
+            leap = false;
+        }
+
+        if (leap){
+            System.out.println(year + " год является високосным");
+        } else {
+            System.out.println(year + " год не является високосным");
+        }
+
     }
 }
